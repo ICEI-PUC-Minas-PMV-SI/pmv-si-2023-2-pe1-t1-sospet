@@ -1,4 +1,4 @@
-# Título do Projeto
+## SOS PET
 
 `CURSO: Sistemas de Informação`
 
@@ -6,19 +6,17 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O SOS Pet destaca a importância do reencontro entre animais perdidos e seus donos e o encontro entre que que precisam de um novo lar, com pessoas em busca de um pet para amar e cuidar.
+
+A missão do SOS Pet é aumentar a conscientização sobre os cuidados necessários com animais em situação de desamparo, bem como fomentar a criação de uma sólida rede de apoio, onde os usuários possam encontrar orientações, receber ajuda de outros amantes de animais e ajudar quem também precisa. Assegurando sempre o bem-estar e segurança dos animais. O SOS Pet é, mais do que uma plataforma, é um recurso abrangente e uma comunidade dedicada a promover a qualidade de vida e cuidado responsável aos pets.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+Júlia Persson Mascari
 
 ## Orientador
 
-* Nome completo do professor 1
+Hugo Bastos de Paula
 
 # Planejamento
 
