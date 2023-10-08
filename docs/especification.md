@@ -1,42 +1,49 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+#Persona 1
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Marina Gonçalves, 21 anos, Professora de Inglês - Sorocaba, São Paulo.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Marina sempre considerou Bolacha como parte de sua família, pois tem seu gato com ela desde os 12 anos. De repente um dia, a porta de casa ficou aberta por acidente, e Bolacha que não tinha o costume de sair de casa, fugiu. Marina ficou desesperada e começou a procurar por seu gatinho em toda a vizinhança, sem sucesso, fez alguns posts nas redes sociais e só obteve retorno de seus amigos desejando boa sorte.
+
+#Persona 2
+
+Carlos Eduardo Silva, 17 anos, Estudante - Florianopolis, Santa Catarina
+
+Carlos estava fazendo o mesmo caminho que realiza todo dia para voltar do seu curso até que encontrou um cachorro, que aparentava estar totalmente perdido e assustado, com uma coleira roxa e o pelo recém tosado na esquina de sua casa. O garoto questiona os seus vizinhos para saber se seria de algum deles e sem respostas e espaço para deixar o animalzinho, tenta encontrar na internet algum local que possa abriga-lo.
+
+#Persona 3
+
+Giovanna Rosa, 12 anos, Estudante- Fortaleza, Ceará.
+
+Giovanna estuda de manhã e passa o resto do dia todo sozinha em casa, pois seus pais trabalham e só voltam no final da noite. A garota sempre quis um animalzinho para poder lhe fazer companhia, ela ama cachorros e gatos, sempre que vai a casa de suas amigas que tem um pet fica imaginando como seria ter um bichinho.
+
+#Persona 4
+
+Luan, 29 anos, Engenheiro - São Paulo, São Paulo.
+
+Luan mora sozinho em São Paulo há quatro anos, mas a um mês encontrou um cachorro na frente de seu trabalho e trouxe para casa para cuidar. Porém, Luan recebeu uma proposta de emprego que sempre sonhou para ir trabalhar no Canadá, e não conseguiria levar Tom, seu pet.
+Ele não conseguiu encontrar ningúem para ficar com o animalzinho e está preocupado com o que irá fazer.
+
+#Persona 5
+
+Deise, 56 anos, Aposentada - Nova Iguaçu, Rio de Janeiro
+
+Deise é uma vendedora aposentada, que sempre foi apaixonada por animais e tem uma ONG de resgate e proteção para pets.
+Ela sempre conseguiu ajuda de algumas pessoas para manter o bem estar dos bichinhos, porém nos ultimos mêses precisou reformar o canil e acabou não conseguindo cobrir todo o valor da reforma com a verba que recebia, agora Deise está com dificuldades para comprar os medicamentos necessários para os animais e não sabe a quem recorrer.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|EU COMO... `PERSONA`     | QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|-----------------------  |------------------------------------|----------------------------------------|
+|Pessoa que perdeu o pet  |Divulgar as características do pet  |Aumentar a chance de outras pessoas o encontrarem|
+|Dono de um animal desaparecido |Procurar animais perdidos na região |Ter a possibilidade de acha-lo|
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Requisitos
 
