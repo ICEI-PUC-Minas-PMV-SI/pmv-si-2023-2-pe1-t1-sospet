@@ -1,54 +1,31 @@
 # Introdução
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+De acordo com uma estimativa da Organização Mundial da Saúde (OMS), mais de 30 milhões de cães e gatos encontram-se em situação de abandono ou perdidos no país. A falta de políticas públicas que garantam a proteção desses animais, oferecendo-lhes segurança e cuidados básicos, muitas vezes os expõe a doenças infecciosas, maus-tratos e acidentes, como atropelamentos. É inaceitável ignorarmos a existência desses seres que tanto amamos, mas que, quando se perdem de suas famílias ou são intencionalmente abandonados, acabam vivendo em condições degradantes e sendo totalmente ignorados.
 
-A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
-
-
-A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
-
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
+Além da triste realidade enfrentada pelos animais, é importante destacar a sensação angustiante de impotência que os proprietários vivenciam quando perdem seus animais de estimação. Recorrendo a cartazes nas ruas, publicações em redes sociais e buscas incessantes na esperança de encontrá-los novamente.
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+O vínculo entre seres humanos e seus animais de estimação é na maioria das vezes profundo e afetuoso. No entanto, esses companheiros podem, em algumas ocasiões, escapar de suas casas, perder-se e enfrentar outras circunstâncias angustiantes que causam grande preocupação aos seus donos. Muitas vezes, esses proprietários se sentem perdidos, sem saber a quem recorrer em busca de auxílio.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Além disso, a alta taxa de compra de animais de estimação e a adoção irresponsável contribuem significativamente para o alarmante número de casos de abandono. Nessa realidade, os animais são muitas vezes encarados como simples mercadorias, passíveis de serem descartados ou trocados como objetos que já não possuem mais o mesmo valor ou utilidade desejada pelo dono.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O principal propósito do SOS Pet é ser um site totalmente responsivo, com um design moderno, prático e de fácil navegação, que funcione como uma rede de apoio para os usuários em busca de seus animais de estimação desaparecidos ou para aqueles que encontraram animais perdidos. Neste espaço os usúarios podem cadastrar informações detalhadas sobre os pets aumentando a disseminação de informações sobre esses animais de estimação desaparecidos.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Além disso, o site concentra-se naqueles que desejam adotar um animal de estimação de forma responsável e naqueles que estão à procura de um companheiro para adotar e cuidar. Com um blog repleto de dicas úteis sobre animais de estimação e um espaço onde é possível cadastrar-se como um possível cuidador temporário ou oferecer ajuda a organizações de resgate de animais, o SOS Pet visa ser um ambiente seguro e acolhedor para todos os amantes de animais.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O SOS Pet tem como objetivo primordial enfatizar a relevância do reencontro entre animais perdidos com seus donos e conectar animais que precisam de um novo lar com indivíduos em busca de um companheiro de estimação para amar e cuidar. 
+A missão do SOS Pet é também aumentar a conscientização sobre os cuidados necessários para os animais em situação de desamparo, bem como fomentar a criação de uma sólida rede de apoio, onde os usuários podem encontrar orientações, receber ajuda de outros amantes de animais e ajudar quem também precisa. Assegurando sempre o bem-estar e segurança dos animais o SOS Pet é, mais do que uma plataforma, é um recurso abrangente e uma comunidade dedicada a promover a qualidade de vida e cuidado responsável aos pets.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+- Proprietários de animais de estimação que perderam seus companheiros e estão em busca deles;
+- Indivíduos que encontraram um animal perdido e desejam ajuda-los a voltar para casa;
+- Organizações dedicadas ao resgate de animais;
+- Pessoas interessadas em adotar um animal de estimação de forma responsável;
+- Usuários que desejam realizar doações responsáveis de seus pets;
+- Pessoas que desejam auxiliar de diversas formas, seja compartilhando informações nas redes sociais, contribuindo com doações para ONGs, oferecendo hospedagem temporária para animais ou entrando em contato para prestar apoio de alguma maneira.
