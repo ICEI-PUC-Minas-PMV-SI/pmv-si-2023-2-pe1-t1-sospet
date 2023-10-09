@@ -14,9 +14,10 @@
 
 O SOS Pet destaca a importância do reencontro entre animais perdidos e seus donos e o encontro entre bichinhos que precisam de um novo lar, com pessoas em busca de um pet para amar e cuidar.
 
+<div align="center">
+  
 ## Integrantes
-
-Júlia Persson Mascari
+<a href="https://github.com/juliamascari" title="Júlia Persson Mascari" rel="nofollow"><img src="docs/img/eu.jpeg" alt="logo" data-canonical-src="https://github.com/juliamascari" width="100vw"/></a> 
 
 ## Orientador
 
