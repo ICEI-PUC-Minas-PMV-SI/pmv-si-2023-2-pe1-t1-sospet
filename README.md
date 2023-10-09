@@ -19,8 +19,10 @@ O SOS Pet destaca a importância do reencontro entre animais perdidos e seus don
 ## Integrantes
 <a href="https://github.com/juliamascari" title="Júlia Persson Mascari" rel="nofollow"><img src="docs/img/eu.jpeg" alt="logo" data-canonical-src="https://github.com/juliamascari" width="100vw"/></a> 
 
-## Orientador
+Júlia Persson Mascari
 
+## Orientador
+<a href="https://github.com/hugodepaula" title="Hugo Bastos De Paula" rel="nofollow"><img src="docs/img/prof.jpg" alt="logo" data-canonical-src="https://github.com/hugodepaula" width="100vw"/></a><br>
 Hugo Bastos de Paula
 
 # Planejamento
