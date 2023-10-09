@@ -7,5 +7,5 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## User Flow
 
-!(https://ibb.co/XDCbLR3)
+!<img src="/assets/img/userfollow">
 
