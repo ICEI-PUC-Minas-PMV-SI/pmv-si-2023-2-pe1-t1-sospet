@@ -7,5 +7,5 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## User Flow
 
-<img src="/img/userflow">
+<img src="/docs/img/userflow.jpg">
 
