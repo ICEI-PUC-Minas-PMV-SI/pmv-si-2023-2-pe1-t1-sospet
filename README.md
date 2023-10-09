@@ -1,4 +1,10 @@
-## SOS PET
+<div align="center">
+
+<h1>S.O.S PET</h1>
+
+<img src="/docs/img/logo completa.png">
+
+<h3>Pontifícia Universidade Católica de Minas Gerais</h3> 
 
 `CURSO: Sistemas de Informação`
 
@@ -6,9 +12,7 @@
 
 `SEMESTRE: 1º`
 
-O SOS Pet destaca a importância do reencontro entre animais perdidos e seus donos e o encontro entre que que precisam de um novo lar, com pessoas em busca de um pet para amar e cuidar.
-
-A missão do SOS Pet é aumentar a conscientização sobre os cuidados necessários com animais em situação de desamparo, bem como fomentar a criação de uma sólida rede de apoio, onde os usuários possam encontrar orientações, receber ajuda de outros amantes de animais e ajudar quem também precisa. Assegurando sempre o bem-estar e segurança dos animais. O SOS Pet é, mais do que uma plataforma, é um recurso abrangente e uma comunidade dedicada a promover a qualidade de vida e cuidado responsável aos pets.
+O SOS Pet destaca a importância do reencontro entre animais perdidos e seus donos e o encontro entre bichinhos que precisam de um novo lar, com pessoas em busca de um pet para amar e cuidar.
 
 ## Integrantes
 
