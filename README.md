@@ -2,7 +2,7 @@
 
 <h1>S.O.S PET</h1>
 
-<img src="/docs/img/logo completa.png">
+<img src="docs/img/Logo principal.png">
 
 <h3>Pontifícia Universidade Católica de Minas Gerais</h3> 
 
