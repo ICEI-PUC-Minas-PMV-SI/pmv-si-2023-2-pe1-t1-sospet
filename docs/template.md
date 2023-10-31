@@ -27,4 +27,4 @@ Fontes que serão utilizadas e sua função no site.
 
 Os ícones que serão utilizados e suas respectivas funções.
 
-<img src="docs/img/iconografia.png">
+<img src="/docs/img/iconografia.png">
