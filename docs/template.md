@@ -5,30 +5,26 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 
 ## Design
 
-Logotipos/logomarcas utilizadas no projeto.
+Logotipo principal do projeto.
 
-<img src="/docs/img/logos.png">
-
-Descrição das páginas principais do layout do site e seu visual.
-
-<img src="/docs/img/templates.png">
+<img src="docs/img/logoprincipal.png">
 
 
 ## Cores
 
 Em sequência a paleta de cores principais que serão utilizadas na formatação do site.
 
-<img src="/docs/img/paletacores.png">
+<img src="docs/img/paletadcores.png">
 
 
 ## Tipografia
 
 Fontes que serão utilizadas e sua função no site.
 
-<img src="/docs/img/fontes.png">
+<img src="docs/img/tipografia.png">
 
 ## Iconografia
 
 Os ícones que serão utilizados e suas respectivas funções.
 
-<img src="/docs/img/iconografia.jpg">
+<img src="docs/img/iconografia.png">
