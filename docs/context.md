@@ -1,6 +1,6 @@
 # Introdução
 
-De acordo com uma estimativa da Organização Mundial da Saúde (OMS), mais de 30 milhões de cães e gatos encontram-se em situação de abandono ou perdidos no país. A falta de políticas públicas que garantam a proteção desses animais, oferecendo-lhes segurança e cuidados básicos, muitas vezes os expõe a doenças infecciosas, maus-tratos e acidentes, como atropelamentos.
+De acordo com uma estimativa da Organização Mundial da Saúde (OMS), [1] mais de 30 milhões de cães e gatos encontram-se em situação de abandono ou perdidos no país. A falta de políticas públicas que garantam a proteção desses animais, oferecendo-lhes segurança e cuidados básicos, muitas vezes os expõe a doenças infecciosas, maus-tratos e acidentes, como atropelamentos.
 
 Além da triste realidade enfrentada pelos animais, é importante destacar a sensação angustiante de impotência que os proprietários vivenciam quando perdem seus animais de estimação. Recorrendo a cartazes nas ruas, publicações em redes sociais e buscas incessantes na esperança de encontrá-los novamente.
 
