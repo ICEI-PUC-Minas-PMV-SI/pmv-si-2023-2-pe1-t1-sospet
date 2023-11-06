@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Suez+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+body {
+font size: 100%; 
+}
+.cabecalho {
+    display: flex;
+    flex direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.cabecalho-imagem {
+    height: 100px;
+}
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+.cabecalho-menu-item {
+    font-family: 'Suez One', serif;
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px
+}
+.home {
+    background-color: #97a857;
+}
+.home-inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around
+}
+.home-inicio-apresentacao {
+    font-family: 'Abril Fatface', serif;
+    font-weight: 500;
+    font-size: 75px;
+    color: #000000;
+}
