@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um espaço para o encontro e reencontro de pets perdidos!">
+   
     <title>SOS PET</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -13,7 +16,7 @@
     <header class="cabecalho">
         <img class="cabecalho-imagem" src="logosemfundo.png" alt="Logo SOS PET">
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item">início</a>
+            <a class="cabecalho-menu-item">sobre</a>
             <a class="cabecalho-menu-item">pet</a>
             <a class="cabecalho-menu-item">relatos</a>
             <a class="cabecalho-menu-item">login/cadastro</a>
@@ -22,44 +25,110 @@
     
     <main class="home">
         <section class="home-inicio">
-            <div class="home-inicio-apresentacao">
-                <h1 class="home-inicio-escrito">espaço dedicado a encontros e reencontros</h1>
+            <div class="home-apresentacao">
+                <h1 class="home-escrito">um espaço dedicado a encontros e reencontros!</h1>
+                <button class="home-botao"> saiba mais </button>
             </div>    
-                <img class="home-inicio-imagem" src="fotohome.jpg" alt="Imagem Home Gato">
+                <img class="home-inicio-imagem" src="inicio.png" alt="Imagem Home Gato">
         </section>
 
-        <section class="home-pet">
-            <h2 class="home-pet-titulo">o que aconteceu? </h2>
-            <button class="home-pet-botao-perdi">perdi meu pet</button>
-            <button class="home-pet-botao-achei">achei um pet</button>
+        <section class="pet">
+            <h2 class="pet-titulo">o que aconteceu? </h2>
+        <div class="pet-botoes">  
+            <button class="botao-perdi"> perdi meu pet </button>
+            <button class="botao-achei"> achei um pet </button>
+        </div>  
         </section>
 
-        <section class="home-relatos">
-            <h3 class="home-relatos-titulo">com o sos pet + de 24 pets foram encontrados e 32 pets adotados!</h3>
+        <section class="relato">
+           <div class="relato-titulo">
+            <h3>conheça alguns de nossos finais felizes!</h3>
+           </div>
+        </section>   
+
+        <section class="relatos">
+        <div class="container">
+            <div class="relato1">
+                <img src="marinafilo.jpg" alt="marina e filo">
+                <p>Marina e Filó</p>
+                <span>"perdi a Filó no ano novo e encontrei ela oito dias depois de anúnciar aqui no sos."</span>
+           </div>
+           <div class="relato2">
+                <img src="luanromeu.jpg" alt="Luan e Romeu">
+                <p>Luan e Romeu</p>
+                <span>"econtrei Romeu entre os anúncios do sos pet e ele foi meu melhor presente."</span>
+           </div>
+           <div class="relato3">
+                <img src="alanasimba.jpg" alt="Alana e Simba">
+                <p>Alana e Simba</p>
+                <span>"Simba desaparesceu e o encontramos graças a um anúncio feito por alguém no site."</span>
+           </div>
+        </div>   
+        </section>
+
+        <section class="adocao">
+            <h4 class="adocao-titulo">você também pode adotar um pet!</h4>
+            <button class="adocao-botao">encontrar um pet para adoção</button>
+        </section>
+
+        <section class="footer">
+            <div class="footer-contatos">
+                <img src="logosemfundo.png" alt="logo">
+                <h5>conheça mais sobre nós!</h5>
+
+            <div class="footer-redes">
+                <a href="#" class="redes-link" id="instagram">
+                <i class="fa-brands fa-square-instagram" style="color: #5f7161;"></i>
+                </a>
+
+                <a href="#" class="redes-link" id="facebook">
+                    <i class="fa-brands fa-square-facebook" style="color: #5f7161;"></i>
+                    </a>
+
+            </div>
+
+            <ul class="footer-lista">
+                <li>
+                    <p>Blog</p>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">sobre nós</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">como funciona</a>
+                </li>
+            </ul>
+
+            <ul class="footer-lista">
+                <li>
+                    <p>Informações</p>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">termos de uso</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">privacidade</a>
+                </li>
+            </ul>
             
-            <img class="home-relatos-marina-img" src="marinafilo.jpg" alt="Imagem Relato Marina e Filó">
-            <p class="home-relatos-marina-titulo">marina e filó</p>
-            <p class="home-relatos-marina-texto">"perdi a filó no ano novo e encontrei ela oito dias depois de anúnciar aqui no sos"</p>
+            <div id="footer-email">
+                <p>fale com a gente :) </p>
+                <span>nos envie um email para tirar suas dúvidas, estamos à disposição!</span>
 
-            <img class="home-relatos-luan-img" src="luanromeu.jpg" alt="Imagem Relato Luan e Romeu">
-            <p class="home-relatos-luan-titulo">luan e romeu</p>
-            <p class="home-relatos-luan-texto">"econtrei romeu entre os anúncios do sos pet e ele foi meu melhor presente"</p>
-
-            <img class="home-relatos-alana-img" src="alanasimba.jpg" alt="Imagem Relato Alana e Simba">
-            <p class="home-relatos-alana-titulo">alana e simba</p>
-            <p class="home-relatos-alana-texto">"simba desaparesceu e o encontramos graças a um anúncio feito por alguém no site"</p>
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+        <div id="footer-copyright">
+            &#169
+            2023 all rights reserved
+        </div>    
         </section>
 
-        <section class="home-adocao">
-            <h4 class="home-adocao-titulo">você também pode adotar um pet!</h4>
-            <button class="home-adocao-botao">encontrar um pet para adoção</button>
-        </section>
     </main>
-
-    <footer>
-
-    </footer>
-
 </body>
 
 </html>
