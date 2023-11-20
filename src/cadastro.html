@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>login ou cadastro :)</title>
+</head>
+
+<body>
+    <div class="container">
+        <img class= "cadastro-img" src="cadastro.jpg" alt="imagem cadastro">
+        <div class="cadastro">
+            <form action="#">
+                <div class="cadastro-header"> 
+                    <div class="titulo">
+                        <h1>vamos fazer seu cadastro!</h1>
+                        <p>para nos conhecermos melhor, aqui vão algumas perguntas:</p>
+                    </div>
+                    <div class="login-botao">
+                        <button><a href="#">já tenho conta!</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">como podemos te chamar?</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="somente seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">qual é o seu email?</label>
+                        <input id="email" type="email" name="email" placeholder="digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">e número de celular?</label>
+                        <input id="number" type="tel" name="number" placeholder="ex: (ddd) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">crie uma senha:</label>
+                        <input id="password" type="password" name="password" placeholder="digite uma senha" required>
+                    </div>
+
+                </div>
+
+                <div class="pet-inputs">
+                    <div class="pet-title">
+                        <h6>qual a sua situação?
+                        </h6>
+                    </div>
+
+                    <div class="pet-group">
+                        <div class="pet-input">
+                            <input id="perdi" type="radio" name="pet">
+                            <label for="perdi">meu pet desaparesceu</label>
+                        </div>
+
+                        <div class="pet-input">
+                            <input id="achei" type="radio" name="pet">
+                            <label for="achei">achei um pet perdido</label>
+                        </div>
+
+                        <div class="pet-input">
+                            <input id="adotar" type="radio" name="pet">
+                            <label for="adotar">quero adotar um pet</label>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">pronto! continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
