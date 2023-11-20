@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um espaço para o encontro e reencontro de pets perdidos!">
    
-    <title>SOS PET</title>
+    <title>sos pet</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="home-style.css">
 </head>
 
 <body>
     <header class="cabecalho">
         <img class="cabecalho-imagem" src="logosemfundo.png" alt="Logo SOS PET">
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item">sobre</a>
-            <a class="cabecalho-menu-item">pet</a>
-            <a class="cabecalho-menu-item">relatos</a>
-            <a class="cabecalho-menu-item">login/cadastro</a>
+            <a href="#home" class="cabecalho-menu-item1">sobre</a>
+            <a href="#pet" class="cabecalho-menu-item2">pet</a>
+            <a href="#relato" class="cabecalho-menu-item3">relatos</a>
+            <a href="cadastro.html" class="cabecalho-menu-item4">login/cadastro</a>
         </nav>
     </header>
     
     <main class="home">
-        <section class="home-inicio">
+        <section id="home" class="home-inicio">
             <div class="home-apresentacao">
                 <h1 class="home-escrito">um espaço dedicado a encontros e reencontros!</h1>
                 <button class="home-botao"> saiba mais </button>
@@ -32,7 +32,7 @@
                 <img class="home-inicio-imagem" src="inicio.png" alt="Imagem Home Gato">
         </section>
 
-        <section class="pet">
+        <section id="pet" class="pet">
             <h2 class="pet-titulo">o que aconteceu? </h2>
         <div class="pet-botoes">  
             <button class="botao-perdi"> perdi meu pet </button>
@@ -40,7 +40,7 @@
         </div>  
         </section>
 
-        <section class="relato">
+        <section id="relato" class="relato">
            <div class="relato-titulo">
             <h3>conheça alguns de nossos finais felizes!</h3>
            </div>
@@ -51,17 +51,17 @@
             <div class="relato1">
                 <img src="relato1.jpg" alt="marina e filo">
                 <p>MARINA E TOM</p>
-                <span>o tom se perdeu da mari no fim do ano e ela encontrou ele fazendo um post aqui no site! </span>
+                <span>o tom se perdeu da marina no fim do ano e ela encontrou ele fazendo um post aqui no site! </span>
            </div>
            <div class="relato2">
                 <img src="relato2.jpg" alt="Luan e Romeu">
                 <p>CAROL E ROMEU</p>
-                <span>a carol encontrou o romeu depois de se apaixonar vendo um post sobre a adoção dele aqui!</span>
+                <span>a carol adotou o romeu depois de se apaixonar vendo um post sobre ele aqui!</span>
            </div>
            <div class="relato3">
                 <img src="relato3.jpg" alt="Alana e Simba">
                 <p>TIAGO E SIMBA</p>
-                <span>tiago encontrou o simba depois de encontrar um post sobre o fugitivo aqui no sos!</span>
+                <span>simba fugiu de casa e foi encontrado pelo tiago após fazer um post aqui no site!</span>
            </div>
            <div class="relato4">
             <img src="relato4.jpg" alt="Luan e Romeu">
@@ -70,8 +70,8 @@
             </div>
             <div class="relato5">
                 <img src="relato5.jpg" alt="Luan e Romeu">
-                <p>JOANA E BERRY</p>
-                <span>a jo perdeu o berry mas o reencontrou atráves de um post feito por ela no site!</span>
+                <p>JOANA E SOPHIA</p>
+                <span>a joana reencontrou a sophia atráves de um post feito por alguém que viu a gatinha perdida!</span>
            </div>
         </div>   
         </section>
@@ -125,7 +125,7 @@
             
             <div id="footer-email">
                 <p>fale com a gente :) </p>
-                <button class="footer-botao">entra r em contato</button>
+                <button class="footer-botao">entrar em contato</button>
             </div>
 
         <div id="footer-copyright">
