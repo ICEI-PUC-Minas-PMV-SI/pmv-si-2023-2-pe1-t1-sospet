@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Suez+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    letter-spacing: 1px;
+}
+
+body {
+font size: 100%; 
+background-color: #FCFFF8;
+}
+
+.cabecalho {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 2%;
+}
+
+.cabecalho-imagem {
+    width: 120px;
+    height: auto;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho-menu {
+    font-family: 'Alata', sans-serif;
+    color: #181918;
+    font-weight: 400;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.cabecalho-menu-item1:hover,
+.cabecalho-menu-item2:hover,
+.cabecalho-menu-item3:hover,
+.cabecalho-menu-item4:hover {
+    color: #5f7161;
+    border-bottom: 2px solid #5f7161;
+}
+
+.cabecalho-menu-item1:visited,
+.cabecalho-menu-item2:visited,
+.cabecalho-menu-item3:visited,
+.cabecalho-menu-item4:visited {
+    color: #5f7161;
+}
+
+.home {
+    background-color: #FCFFF8;
+    padding: 32px;
+    margin-bottom: 16px;
+    justify-content: space-around;
+}
+
+.home-inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom: 5%;
+
+}
+
+.home-apresentacao {
+    flex-direction: column;
+    gap: 32px;
+}
+
+.home-escrito{
+    font-family: 'Suez One', serif;
+    font-weight: 500;
+    font-size: 75px;
+    color: #181918;
+    max-width: 1000px;
+}
+
+.home-botao {
+    margin-top: 20px;
+    background-color: #97a97c;;
+    width: 280px;
+    height: 80px;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.home-botao:hover {
+    background: #c6d8ad;
+    color: #fcfff8;
+}
+
+.home-inicio-imagem {
+    width: 750px;
+    height: auto;
+}
+
+.pet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+ .pet-titulo {
+    font-family: 'Suez One', serif;
+    color: #181918;
+    font-weight: 400;
+    font-size: 60px
+ }
+
+ .pet-botoes {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+
+ }
+
+ .botao-perdi {
+    background-color: #97a97c;
+    width: 300px;
+    height: 100px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    font-family: 'Alata', sans-serif;
+    font-size: 40px;
+    color: #181918;
+    margin-right: 80px;
+    text-align: center;
+    display: inline-block;
+ }
+
+ .botao-achei {
+    background-color: #97a97c;
+    width: 300px;
+    height: 100px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    font-family: 'Alata', sans-serif;
+    font-size: 40px;
+    color: #181918;
+    text-align: center;
+    display: inline-block;
+ }
+
+ .botao-perdi:hover,
+ .botao-achei:hover {
+    background: #c6d8ad;
+    color: #fcfff8;
+ }
+
+ .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+ }
+
+.container .relato1,
+.container .relato2,
+.container .relato3,
+.container .relato4,
+.container .relato5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+ .container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #5f7161;
+    margin-bottom: 20px;
+ }
+
+ .relato-titulo {
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'Suez One', serif;
+    color: #181918;
+    font-weight: 400;
+    font-size: 45px
+ }
+
+.relato1 p,
+.relato2 p,
+.relato3 p,
+.relato4 p,
+.relato5 p {
+    font-weight: bold; 
+    font-size: 26px; 
+ }
+ 
+.relato1 span,
+.relato2 span,
+.relato3 span,
+.relato4 span,
+.relato5 span {
+    margin-top: 20px;
+    font-size: 20px; 
+}
+
+.relato1:hover,
+.relato2:hover,
+.relato3:hover,
+.relato4:hover,
+.relato5:hover {
+    color: #97a97c;
+}
+ .adocao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    margin-top: 80px;
+    padding: 20px;
+    margin-top: 50px;
+ }
+
+ .adocao-titulo {
+    font-family: 'Suez One', serif;
+    color: #181918;
+    font-weight: 400;
+    font-size: 60px
+ }
+
+ .adocao-botao {
+    background-color: #97a97c;
+    width: 500px;
+    height: 120px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    text-align: center;
+ }
+
+.adocao-botao:hover {
+    background: #c6d8ad;
+    color: #fcfff8;
+}
+
+ body, h1, h2, h3, p, ul, li {
+    margin: 10px;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    background-color: #dce1d4;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-contatos img {
+    width: 80px; 
+    height: auto;
+}
+
+.footer-contatos h5 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.footer-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 25px;
+}
+
+
+.redes-link {
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer-lista {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.footer-lista a:hover {
+    color: #5f7161;
+    border-bottom: 2px solid #5f7161;
+}
+
+.footer-botao {
+    background-color: #5f7161;
+    color: #fff;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+}
+
+#footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.a:visited {
+    color: #181918;
+}

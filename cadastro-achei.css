@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Suez+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E6F1EB;
+}
+
+.container {
+    width: 80%;
+    height: 85vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.container h1 {
+    font-size: 200%;
+    margin-bottom: 2%;
+}
+
+.cadastro-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfff8;
+    padding: 1rem;
+}
+
+.cadastro-img img {
+    width: 31rem;
+}
+
+.cadastro {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfff8;
+    padding: 3rem;
+}
+
+.cadastro-header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Suez One', serif;
+    color: #181918;
+}
+
+.cadastro-header p::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #97a97c;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.genero-especie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.genero-especie label {
+    font-family: 'Alata', sans-serif;   
+}
+
+.genero-especie select {
+    width:9rem;
+    font-size:100%;
+    padding:2px;
+    background-color:#c6d8ad;
+    padding-left:5%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px #0000001c;
+    }
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-family: 'Alata', sans-serif;
+    flex-direction: column;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: #dce1d4;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #5f7161;
+}
+
+.continue-button button {
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid #000000;
+    background-color: #c6d8ad;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Alata', sans-serif;
+}
+
+.continue-button button:hover {
+    background-color: #97a97c;
+    border: 1px solid #000000;
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #181918;
+}
