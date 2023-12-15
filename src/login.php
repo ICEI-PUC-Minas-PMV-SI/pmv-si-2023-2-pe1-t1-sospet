@@ -2,9 +2,9 @@
 session_start();
 
 $servername = "localhost";
-$username = "root";
-$password = "zC;BU`T96F1$";
-$database = "sospet";
+$username = "livre145_sospet";
+$password = "]1^xUN91H}Uj";
+$database = "livre145_sospet";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
