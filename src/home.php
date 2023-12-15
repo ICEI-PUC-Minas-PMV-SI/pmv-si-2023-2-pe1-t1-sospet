@@ -1,24 +1,10 @@
-<?php
-    session_start();
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-        $_SESSION["usuario_autenticado"] = true;
-
-        header("Location: home.php");
-        exit();
-    }
-
-        $botao_visivel = !isset($_SESSION["usuario_autenticado"]) || $_SESSION["usuario_autenticado"] !== true;
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="Um espaço para o encontro e reencontro de pets perdidos!">
    
     <title>sos pet</title>
@@ -34,8 +20,8 @@
         <nav class="cabecalho-menu">
             <a href="#home" class="cabecalho-menu-item1">sobre</a>
             <a href="#pet" class="cabecalho-menu-item2">pet</a>
-            <a href="#relato" class="cabecalho-menu-item3">relatos</a>
-            <div class="login-botao" <?php if (!$botao_visivel) echo 'style="display:none;"'; ?>>
+            <a href="#relatos" class="cabecalho-menu-item3">relatos</a>
+            <div class="login-botao">
                 <a href="login.php" class="cabecalho-menu-item4">login/cadastro</a>
             </div>
         </nav>
@@ -45,6 +31,7 @@
         <section id="home" class="home-inicio">
             <div class="home-apresentacao">
                 <h1 class="home-escrito">um espaço dedicado a encontros e reencontros!</h1>
+                <p>confira anúncios sobre pets que estão desaparescidos!</p>
                 <a href="feed.php" class="home-botao"> buscar pet</a>
             </div>    
                 <img class="home-inicio-imagem" src="img\inicio.png" alt="Imagem Home Gato">
@@ -52,19 +39,17 @@
 
         <section id="pet" class="pet">
             <h2 class="pet-titulo">quer fazer um anúncio? </h2>
+            <p>crie um anúncio e tenha mais chances de encontrar seu pet!</p>
         <div class="pet-botoes">  
-            <a href="cadastro-perdi.php" class="botao-perdi">perdi meu pet</a>
-            <a href="cadastro-achei.php" class="botao-achei">achei um pet</a>
+            <a href="cadastro.php" class="botao">criar um anúncio</a>
         </div>  
         </section>
 
-        <section id="relato" class="relato">
            <div class="relato-titulo">
             <h3>conheça alguns de nossos finais felizes!</h3>
-           </div>
-        </section>   
+           </div> 
 
-        <section class="relatos">
+           <section id="relatos" class="relatos">
         <div class="container">
             <div class="relato1">
                 <img src="img\relato1.jpg" alt="marina e filo">
@@ -96,7 +81,8 @@
 
         <section class="adocao">
             <h4 class="adocao-titulo">você também pode adotar um pet!</h4>
-            <a href="feed.html" class="adocao-botao">encontrar um pet para adoção</a>
+            <p>encontre um pet que está perdido e precisando de um lar!</p>
+            <a href="feed.php" class="adocao-botao">encontrar um pet para adoção</a>
         </section>
 
     </main>
