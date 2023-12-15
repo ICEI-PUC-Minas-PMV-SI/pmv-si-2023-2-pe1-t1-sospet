@@ -10,18 +10,12 @@ Logotipo principal do projeto.
 <img src="/docs/img/logoprincipal.png">
 
 
-## Cores
+## Cores e Tipografia
 
-Em sequência a paleta de cores principais que serão utilizadas na formatação do site.
+Em sequência a paleta de cores e fontes principais que serão utilizadas no site.
 
-<img src="/docs/img/paletadcores.png">
+<img src="/docs/img/identidade.png">
 
-
-## Tipografia
-
-Fontes que serão utilizadas e sua função no site.
-
-<img src="/docs/img/tipografia.png">
 
 ## Iconografia
 
