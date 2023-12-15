@@ -13,20 +13,22 @@
     <header class="cabecalho">
         <a href="home.php"><img class="cabecalho-imagem" src="img/logosemfundo.png" alt="Logo SOS PET"></a>
         <nav class="cabecalho-menu">
-            <button><a href="login.html">login/cadastro</a> </button>
+            <button><a href="login.php">login/cadastro</a> </button>
         </nav>
     </header>
 
     <div class="texto1">
-        <h1>o que é o SOS PET?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti beatae minus aliquam, unde culpa ut totam facere qui quam. Voluptates saepe aperiam nobis asperiores voluptatem iusto quo autem tempora porro.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolorum aliquam ad magni repellat quam quaerat deleniti? Ratione alias eos tenetur molestiae consectetur ab omnis dolores. Qui explicabo voluptas nulla.</p>
+        <h1>O QUE É O SOS PET?</h1>
+        <p>bem-vindo ao SOS PET! </p>
+        <p>aqui você encontrará um espaço online dedicado ao reencontro de animais de estimação perdidos e suas famílias. onde os usuários podem criar anúncios detalhados sobre pets desaparecidos ou encontrados, incluindo informações como espécie, gênero e localização.</p>
+        <p>comprometemo-nos com a privacidade dos usuários, garantindo a confidencialidade das informações. o SOS PET tem a missão de trazer conforto e esperança de reunir famílias com seus pets queridos, promovendo laços de amor e compaixão. </p>
+        <p>junte-se a nós nessa jornada!</p>
     </div>
 
     <div class="texto2">
-        <h2>como o SOS PET funciona?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio officia cumque nemo dolorem, eius debitis cupiditate in nihil quos repellat sunt accusantium accusamus fugiat eum quam quod, numquam nostrum similique.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In error numquam tempora quibusdam impedit maxime quidem earum quisquam accusantium velit necessitatibus odit atque, natus voluptates odio sed! Sint, quae voluptatibus.</p>
+        <h2>COMO O SOS PET FUNCIONA?</h2>
+        <p>após um rápido cadastro, você pode criar um anúncio detalhado, incluindo aespécie, gênero, imagem e localização do pet. </p>
+        <p>com atualizações em tempo real, o SOS PET reuni todos os anúncios publicados no site, ná pagina de busca, onde você pode procurar por seu animalzinho e também ver outros pets que estão desaparescidos.</p>
     </div>
 
 
@@ -52,16 +54,16 @@
     
         <ul class="footer-lista">
             <li>
-                <a href="sobresos.html" class="footer-link">sobre o SOS PET</a>
+                <a href="sobresos.php" class="footer-link">sobre o SOS PET</a>
             </li>
             <li>
-                <a href="politicasepriv.html" class="footer-link">nossas políticas e termos</a>
+                <a href="politicasepriv.php" class="footer-link">nossas políticas e termos</a>
             </li>
         </ul>
         
         <div id="footer-email">
             <p>fale com a gente :) </p>
-            <a href="formulario.html" class="footer-botao">entrar em contato</a>
+            <a href="formulario.php" class="footer-botao">entrar em contato</a>
         </div>
     
         <div id="footer-copyright">
