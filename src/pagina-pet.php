@@ -1,10 +1,12 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
+
 session_start();
 
 $servername = "localhost";
-$username = "root";
-$password = "zC;BU`T96F1$";
-$database = "sospet";
+$username = "livre145_sospet";
+$password = "]1^xUN91H}Uj";
+$database = "livre145_sospet";
 
 $conexao = mysqli_connect($servername, $username, $password, $database);
 
@@ -12,45 +14,56 @@ if (!$conexao) {
     die("Falha na conexão com o banco de dados: " . mysqli_connect_error());
 }
 
-$id = isset($_GET['id']) ? (int)$_GET['id'] : null;
+mysqli_set_charset($conexao, "utf8");
 
-if ($id === null || $id <= 0) {
+$usuario_id = isset($_GET['id']) ? (int)$_GET['id'] : null;
+if ($usuario_id === null || $usuario_id <= 0) {
     die("Anúncio não encontrado.");
 }
-
 
 $sql = "SELECT pet.*, usuarios.nome_tutor, usuarios.email_tutor, usuarios.telefone_tutor
         FROM pet
         INNER JOIN usuarios ON usuarios.id = pet.usuario_id
-        WHERE usuario_id = $id";
-    
+        WHERE pet.usuario_id = ?";
+
 $stmt = mysqli_prepare($conexao, $sql);
 
 if ($stmt) {
+    mysqli_stmt_bind_param($stmt, "i", $usuario_id);
     mysqli_stmt_execute($stmt);
     $resultado = mysqli_stmt_get_result($stmt);
-}
 
-if (!$resultado) {
+    if (!$resultado) {
     die("Erro ao buscar informações do anúncio: " . mysqli_error($conexao));
+    }
+
+    if (mysqli_num_rows($resultado) > 0) {
+        $anuncio = mysqli_fetch_assoc($resultado);
+
+        $idPet = $anuncio['id'];
+        $nomePet = $anuncio['nome'];
+        $especiePet = $anuncio['especie'];
+        $generoPet = $anuncio['genero'];
+        $descricaoPet = $anuncio['descricao'];
+        $cidadePet = $anuncio['cidade'];
+        $imagemPet = $anuncio['imagem'];
+        $dataCriacao = date('d/m/Y H:i:s', strtotime($anuncio['data_criacao']));
+
+        $usuarioId = isset($anuncio['usuario_id']) ? $anuncio['usuario_id'] : null;
+        $nomeTutor = $anuncio['nome_tutor'];
+        $emailTutor = $anuncio['email_tutor'];
+        $telefoneTutor = $anuncio['telefone_tutor'];
+
+    } else {
+        echo "DEBUG: Nenhum anúncio encontrado.";
+    }
+
+    mysqli_stmt_close($stmt);
+} else {
+    echo "Erro ao preparar a consulta: " . mysqli_error($conexao);
 }
 
-if (mysqli_num_rows($resultado) > 0) {
-    $anuncio = mysqli_fetch_assoc($resultado);
-
-    $idPet = $anuncio['id'];
-    $nomePet = $anuncio['nome'];
-    $especiePet = $anuncio['especie'];
-    $generoPet = $anuncio['genero'];
-    $descricaoPet = $anuncio['descricao'];
-    $cidadePet = $anuncio['cidade'];
-    $imagemPet = $anuncio['imagem'];
-    $dataCriacao = date('d/m/Y H:i:s', strtotime($anuncio['data_criacao']));
-
-    $usuarioId = isset($anuncio['usuario_id']) ? $anuncio['usuario_id'] : null;
-    $nomeTutor = $anuncio['nome_tutor'];
-    $emailTutor = $anuncio['email_tutor'];
-    $telefoneTutor = $anuncio['telefone_tutor'];
+mysqli_close($conexao);
 ?>
 
 <!DOCTYPE html>
@@ -58,6 +71,7 @@ if (mysqli_num_rows($resultado) > 0) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" href="pagina-pet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>anúncio pet</title>
@@ -72,7 +86,7 @@ if (mysqli_num_rows($resultado) > 0) {
         </nav>
     </header>
 
-        <div class="container">
+        <div class="box-container">
             <div class="imagem">
                 <img class= "img-pet" src="<?php echo $imagemPet; ?>" alt="imagem pet">   
             </div>
@@ -116,10 +130,10 @@ if (mysqli_num_rows($resultado) > 0) {
         
                 <ul class="footer-lista">
                     <li>
-                        <a href="#" class="footer-link">o que é o SOS PET?</a>
+                        <a href="sobresos.php" class="footer-link">o que é o SOS PET?</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-link">políticas e termos de uso</a>
+                        <a href="politicasepriv.php" class="footer-link">políticas e termos de uso</a>
                     </li>
                 </ul>
                 
@@ -137,12 +151,3 @@ if (mysqli_num_rows($resultado) > 0) {
 
 </body>
 </html>
-<?php
-} else {
-    echo "Anúncio não encontrado.";
-    mysqli_stmt_close($stmt);
-}
-
-mysqli_close($conexao);
-
-?>
