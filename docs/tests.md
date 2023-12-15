@@ -85,15 +85,6 @@ Satisfação subjetiva: responde como o usuário avalia o sistema com relação 
 4. Bom; 
 5. Ótimo.
 
-Tempo para conclusão da tarefa: em segundos, e em comparação com o tempo utilizado quando um especialista (um desenvolvedor) realiza a mesma tarefa.
-
-Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as informações pessoais dos usuários que participaram do teste não foram coletadas, tendo em vista a ausência de Termo de Consentimento Livre e Esclarecido.
-
-
-Apresente os cenários de testes utilizados na realização dos testes de usabilidade da sua aplicação. Escolha cenários de testes que demonstrem as principais histórias de usuário sendo realizadas. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
 
 ## Cenários de Teste de Usabilidade
 
@@ -151,7 +142,8 @@ Cenário 2: Você é uma pessoa que encontrou um pet perdido. Publique um anúnc
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 16.00 segundos |
 
 
-    Comentários dos usuários: A busca por um anúncio dentro do site é fácil, apresentando os resultados de forma rápida com um anúncio organizado e completo.
+    Comentários dos usuários: A busca por um anúncio dentro do site é fácil, 
+    apresentando os resultados de forma rápida com um anúncio organizado e completo.
 
 
 
