@@ -18,15 +18,15 @@
     </header>
 
     <div class="texto1">
-        <h1>nossas políticas</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti beatae minus aliquam, unde culpa ut totam facere qui quam. Voluptates saepe aperiam nobis asperiores voluptatem iusto quo autem tempora porro.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod dolorum aliquam ad magni repellat quam quaerat deleniti? Ratione alias eos tenetur molestiae consectetur ab omnis dolores. Qui explicabo voluptas nulla.</p>
+        <h1>NOSSOS TERMOS DE USO</h1>
+        <p>ao utilizar ou acessar o Site de qualquer forma, ou adicionar seu próprio conteúdo, você concorda em seguir a estes Termos. você também concorda com nossa política de privacidade e quaisquer outras políticas que postarmos no SOS PET.</p>
+        <p>para criar sua conta é necessário que você tenha no mínimo 13 anos de idade, com a responsabilidade integral do usuário pelo login e segurança da conta. a terminação do acesso ao site pode ocorrer sem aviso prévio. o usuário é responsável pelo material que aprova para publicação, garantindo que não viole direitos de terceiros ou leis aplicáveis. dentro do site são somente permitidas postagens relacionadas a animais perdidos/encontrados, proibindo informações de identificação pessoal, linguagem ofensiva, imagens não relacionadas a animais.</p>
     </div>
 
     <div class="texto2">
-        <h2>termos de privacidade</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio officia cumque nemo dolorem, eius debitis cupiditate in nihil quos repellat sunt accusantium accusamus fugiat eum quam quod, numquam nostrum similique.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In error numquam tempora quibusdam impedit maxime quidem earum quisquam accusantium velit necessitatibus odit atque, natus voluptates odio sed! Sint, quae voluptatibus.</p>
+        <h2>POLÍTICAS DE PRIVACIDADE</h2>
+        <p>a SOS PET coleta informações pessoais, como dados de contato, informações do animal de estimação e de localização, para fornecer serviços e principalmente criar campanhas de animais perdidos/encontrados promovendo a comunicação entre usuários. as informações podem ser compartilhadas com outros usuários, provedores de serviços e em casos legais. A SOS PET adota medidas de segurança para proteger dados, usando criptografia e restrições de acesso.</p>
+        <p>se você tiver alguma dúvida sobre esta página, sinta-se à vontade para entrar em contato conosco em contato@sospet.com.br.</p>
     </div>
 
 
