@@ -1,10 +1,11 @@
 <?php
 session_start();
 
+
     $servername = "localhost";
-    $username = "root";
-    $password = "zC;BU`T96F1$";
-    $database = "sospet";
+    $username = "livre145_sospet";
+    $password = "]1^xUN91H}Uj";
+    $database = "livre145_sospet";
 
     $conn = new mysqli($servername, $username, $password, $database);
 
@@ -26,13 +27,29 @@ session_start();
 
             $_SESSION['usuario_id'] = $idDoUsuario;
 
-            echo '<script>window.location.href = "home.php";</script>';
+            $pet_situation = isset($_POST["pet"]) ? $_POST["pet"] : "";
+
+            switch ($pet_situation) {
+                case 'perdi':
+                    header("Location: cadastro-perdi.php");
+                    break;
+                case 'achei':
+                    header("Location: cadastro-achei.php");
+                    break;
+                case 'adotar':
+                    header("Location: feed.php");
+                    break;
+                default:
+                    header("Location: home.php");
+                    break;
+            }
+    
             exit();
         } else {
             echo "Erro ao cadastrar: " . $conn->error;
         }
     }
-
+    
     $conn->close();
 ?>
 
@@ -99,22 +116,21 @@ session_start();
                     </div>
 
                     <div class="pet-group">
-                        <div class="pet-input">
-                            <input id="perdi" type="radio" name="pet">
-                            <label for="perdi">meu pet desaparesceu</label>
-                        </div>
-
-                        <div class="pet-input">
-                            <input id="achei" type="radio" name="pet">
-                            <label for="achei">achei um pet perdido</label>
-                        </div>
-
-                        <div class="pet-input">
-                            <input id="adotar" type="radio" name="pet">
-                            <label for="adotar">quero adotar um pet</label>
-                        
-                        </div>
+                    <div class="pet-input">
+                        <input id="perdi" type="radio" name="pet" value="perdi">
+                        <label for="perdi">meu pet desapareceu</label>
                     </div>
+
+                    <div class="pet-input">
+                        <input id="achei" type="radio" name="pet" value="achei">
+                        <label for="achei">achei um pet perdido</label>
+                    </div>
+
+                    <div class="pet-input">
+                        <input id="adotar" type="radio" name="pet" value="adotar">
+                        <label for="adotar">quero adotar um pet</label>
+                    </div>
+                </div>
                 </div>
 
                 <div class="continue-button">
