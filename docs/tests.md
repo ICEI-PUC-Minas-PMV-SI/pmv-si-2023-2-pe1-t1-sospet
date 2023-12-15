@@ -115,7 +115,7 @@ Cenário 1: Você é uma pessoa que tem um pet desaparescido. Crie um anúncio n
 | 2       | SIM             | 5                    | 34.11 segundos                  |
 | 3       | SIM             | 5                    | 21.26 segundos                  |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Média**     | 100%           | 5                | 27.75 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 26.00 segundos |
 
 
@@ -131,7 +131,7 @@ Cenário 2: Você é uma pessoa que encontrou um pet perdido. Publique um anúnc
 | 2       | SIM             | 5                    | 29.43 segundos                          |
 | 3       | SIM             | 5                    | 26.50 segundos                          |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Média**     | 100%           | 5                | 26.20 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 22.00 segundos |
 
 
@@ -147,7 +147,7 @@ Cenário 2: Você é uma pessoa que encontrou um pet perdido. Publique um anúnc
 | 2       | SIM             | 5                    | 17.32 segundos                          |
 | 3       | SIM             | 5                    | 20.11 segundos                          |
 |  |  |  |  |
-| **Média**     | 0%           | 0                | 0 segundos                           |
+| **Média**     | 100%           | 5                | 19.02 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 16.00 segundos |
 
 
