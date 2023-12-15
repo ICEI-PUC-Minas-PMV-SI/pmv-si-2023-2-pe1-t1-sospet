@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="feed.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>busca-pet</title>
-        <script>
-            function filtrar() {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="feed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>busca-pet</title>
+    <script>
+        function filtrar() {
+            var especie = document.getElementById("especie").value;
+            var genero = document.getElementById("genero").value;
+            var cidade = document.getElementById("cidade").value.toLowerCase();
 
-                var situacao = document.getElementById("situacao").value;
-                var especie = document.getElementById("especie").value;
-                var genero = document.getElementById("genero").value;
-                var cidade = document.getElementById("cidade").value.toLowerCase();
+            var elementos = document.querySelectorAll(".box-container > .box-item");
 
-                var elementos = document.getElementsByClassName("box-container")[0].children;
-    
+            for (var i = 0; i < elementos.length; i++) {
+                var elemento = elementos[i];
+                var especieAnuncio = elemento.getAttribute("data-especie").toLowerCase();
+                var generoAnuncio = elemento.getAttribute("data-genero").toLowerCase();
+                var cidadeAnuncio = elemento.getAttribute("data-cidade").toLowerCase();
 
-                for (var i = 0; i < elementos.length; i++) {
-                    var elemento = elementos[i];
-                    var textoCidade = elemento.textContent.toLowerCase();
-    
-                    var atendeFiltro = true;
-    
-                    if (situacao !== "todos" && !textoCidade.includes(situacao)) {
-                        atendeFiltro = false;
-                    }
-    
-                    if (especie !== "todos" && !textoCidade.includes(especie)) {
-                        atendeFiltro = false;
-                    }
-    
-                    if (genero !== "todos" && !textoCidade.includes(genero)) {
-                        atendeFiltro = false;
-                    }
-    
-                    if (cidade !== "" && !textoCidade.includes(cidade)) {
-                        atendeFiltro = false;
-                    }
+                var atendeFiltro = true;
 
-                    if (atendeFiltro) {
-                        elemento.style.display = "block";
-                    } else {
-                        elemento.style.display = "none";
-                    }
+                if (especie !== "todos" && especie !== especieAnuncio) {
+                    atendeFiltro = false;
+                }
+
+                if (genero !== "todos" && genero !== generoAnuncio) {
+                    atendeFiltro = false;
+                }
+
+                if (cidade !== "" && !cidadeAnuncio.includes(cidade)) {
+                    atendeFiltro = false;
+                }
+
+                if (atendeFiltro) {
+                    elemento.style.display = "block";
+                } else {
+                    elemento.style.display = "none";
                 }
             }
-        </script>
+        }
+    </script>
+
     </head>
 <body>
     <header class="cabecalho">
@@ -56,6 +53,7 @@
             </nav>
     </header>
 
+    <div class="container-page">
     <div class="titulo">
         <h1>anúncios:</h1>
         <p>aqui alguns anúncios criados no SOS PET!</p>
@@ -67,12 +65,6 @@
     </div>
 
     <div class="filtro">
-        <label for="situacao">situação do pet:</label>
-        <select id="situacao" name="situacao">
-            <option value="procurando">procurando dono</option>
-            <option value="procurado">sendo procurado</option>
-        </select>
-
         <label for="especie">espécie do pet:</label>
         <select id="especie" name="especie">
             <option value="cachorro">cachorro</option>
@@ -94,38 +86,42 @@
     </div>
 
     <div class="box-container">
-        <?php
-        session_start();
-        $servername = "localhost";
-        $username = "root";
-        $password = "zC;BU`T96F1$";
-        $database = "sospet";
+    <?php
+    session_start();
+    $servername = "localhost";
+    $username = "livre145_sospet";
+    $password = "]1^xUN91H}Uj";
+    $database = "livre145_sospet";
 
-        $conexao = mysqli_connect($servername, $username, $password, $database);
+    $conexao = mysqli_connect($servername, $username, $password, $database);
 
-        if (!$conexao) {
-            die("Falha na conexão com o banco de dados: " . mysqli_connect_error());
+    if (!$conexao) {
+        die("Falha na conexão com o banco de dados: " . mysqli_connect_error());
+    }
+
+    mysqli_set_charset($conexao, "utf8mb4");
+
+    $sql = "SELECT * FROM pet";
+    $resultado = mysqli_query($conexao, $sql);
+
+    if ($resultado) {
+        while ($anuncio = mysqli_fetch_assoc($resultado)) {
+            echo '<div class="box-item box' . $anuncio['id'] . '" data-especie="' . $anuncio['especie'] . '" data-genero="' . $anuncio['genero'] . '" data-cidade="' . $anuncio['cidade'] . '">';
+            echo '<a href="detalhe-pet.php?id=' . $anuncio['id'] . '"><img src="' . $anuncio['imagem'] . '" alt="' .($anuncio['nome']) . '"></a>';
+            echo '<p>' .($anuncio['nome']) . ' em ' .($anuncio['cidade']) . '</p>';
+            echo '</div>';
         }
 
-        $sql = "SELECT * FROM pet";
-        $resultado = mysqli_query($conexao, $sql);
+        mysqli_free_result($resultado);
+    } else {
+        echo "Erro na consulta: " . mysqli_error($conexao);
+    }
 
-        if ($resultado) {
-            while ($anuncio = mysqli_fetch_assoc($resultado)) {
-                echo '<div class="box' . $anuncio['id'] . '">';
-                echo '<a href="pagina-pet.php?id=' . $anuncio['id'] . '"><img src="' . $anuncio['imagem'] . '" alt="' . $anuncio['nome'] . '"></a>';
-                echo '<p>' . $anuncio['nome'] . ' em ' . $anuncio['cidade'] . '</p>';
-                echo '</div>';
-            }
-
-            mysqli_free_result($resultado);
-        } else {
-            echo "Erro na consulta: " . mysqli_error($conexao);
-        }
-
-        mysqli_close($conexao);
-        ?>
+    mysqli_close($conexao);
+    ?>
     </div>
+    </div>
+    
 
     <div class="footer">
         <div class="footer-contatos">
