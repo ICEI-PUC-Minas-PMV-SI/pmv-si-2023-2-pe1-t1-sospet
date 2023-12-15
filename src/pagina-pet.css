@@ -51,14 +51,14 @@
     background-color: #5f7161;
 }
 
-.container {
+.box-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-evenly;
-    margin-top: 5%;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
+
 
 .img-pet {
     width: 650px;
