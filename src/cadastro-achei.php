@@ -35,7 +35,7 @@ ob_start();
                     $imagem = $diretorio_base . $_FILES["imagem"]["name"];
 
                     if (move_uploaded_file($_FILES["imagem"]["tmp_name"], $imagem)) {
-                
+                    
                     } else {
                         die("Erro no envio da imagem.");
                     }
@@ -43,11 +43,10 @@ ob_start();
                     die("Nenhum arquivo de imagem enviado.");
                 }
             
-                $sql = "INSERT INTO pet (especie, genero, descricao, cidade, imagem, usuario_id) VALUES ('$especie', '$genero', '$descricao', '$cidade', '$imagem', '$id')";
+                $sql = "INSERT INTO pet (especie, genero, nome, descricao, cidade, imagem, usuario_id) VALUES ('$especie', '$genero', '$nome', '$descricao', '$cidade', '$imagem', '$id')";
             
                 if (mysqli_query($conexao, $sql)) {
                     $idDoUsuario = mysqli_insert_id($conexao);
-            
                     header("Location: pagina-pet.php?id=$id");
                     exit();
                 } else {
@@ -65,27 +64,25 @@ ob_end_flush();
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro-achei.css">
-    <title>cadastro pet encontrado!</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="cadastro-perdi.css">
+    <title>cadastro pet perdido!</title>
 </head>
 
 <body>
 
     <div class="container">
-        <img class= "cadastro-img" src="img/cadastro-achei.jpg" alt="imagem cadastro achei pet">
+        <img class= "cadastro-img" src="img/cadastro-perdi.jpg" alt="imagem cadastro perdi pet">
         <div class="cadastro">
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
                 <div class="cadastro-header"> 
                     <div class="titulo">
-                        <h1>você encontrou um pet? que ótimo!</h1>
-                        <p>mas para o ajudarmos a voltar para casa, responda algumas perguntas:</p>
+                        <h1>você perdeu seu pet? nós sentimos muito :/</h1>
+                        <p>mas para te ajudarmos a encontra-lo, responda algumas perguntas:</p>
                     </div>
                 </div>
 
-            <div class="input-group">
                 <div class="genero-especie">
                     <label for="especie">espécie do pet:</label>
                     <select id="especie" name="especie">
@@ -100,21 +97,29 @@ ob_end_flush();
                     </select>
                 </div>
 
+                <div class="input-group">
                     <div class="input-box">
-                        <label for="text">fale um pouco sobre o pet:</label>
+                        <label for="firstname">digite o nome do pet:</label>
+                        <input id="firstname" type="text" name="nome" placeholder="digite o nome do seu pet." required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="text">fale um pouco sobre ele:</label>
                         <input id="text" type="text" name="descricao" placeholder="descreva seu pet, por exemplo: cor, tamanho e outras características." required>
                     </div>
 
                     <div class="input-box">
-                        <label for="text">em qual cidade você encontrou o pet:</label>
-                        <input id="text" type="text" name="cidade" placeholder="digite aqui a cidade em que ele foi visto." required>
+                        <label for="text">digite sua cidade:</label>
+                        <input id="cidade" type="text" name="cidade" placeholder="digite aqui a cidade em ele foi visto pela última vez." required>
                     </div>
 
                     <div class="input-box">
                         <label for="imagem">envie uma imagem do pet:</label>
                         <input id="imagem" type="file" name="imagem" accept="image/*">
                     </div>
-            </div>
+
+                </div>
+
                 <div class="continue-button">
                     <button type="submit">pronto? publicar anúncio!</button>
                 </div>
