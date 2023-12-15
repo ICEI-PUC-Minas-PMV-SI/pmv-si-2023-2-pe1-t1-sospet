@@ -139,6 +139,7 @@
     border-radius:4px; 
     padding:0.6em; 
     transition: 0.3s;  
+    width: 100%;
 
 }
 
@@ -160,13 +161,14 @@
     border-radius:4px; 
     padding:0.6em; 
     outline:none;
-    transition: 0.3s;   
+    transition: 0.3s;  
+    width: 100%; 
 
 }
 
-.formularioContato label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
-.formularioContato label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; }
-.formularioContato label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+.formularioContato label input:focus    { box-shadow:0 0 5px 0px #5f7161; border:1px #5f7161 solid; color:#5f7161(37,174,230);}
+.formularioContato label select:focus   { box-shadow:0 0 5px 0px #5f7161; border:1px #5f7161 solid; }
+.formularioContato label textarea:focus { box-shadow:0 0 5px 0px #5f7161; border:1px #5f7161 solid; color:#5f7161(37,174,230);}
 
 .formularioContato button.btn-envia { 
     background-color: #5f7161;
