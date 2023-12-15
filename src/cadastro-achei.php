@@ -1,9 +1,13 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
+
 session_start();
-        $servername = "localhost";
-        $username = "root";
-        $password = "zC;BU`T96F1$";
-        $database = "sospet";
+ob_start();
+
+    $servername = "localhost";
+    $username = "livre145_sospet";
+    $password = "]1^xUN91H}Uj";
+    $database = "livre145_sospet";
 
             $conexao = mysqli_connect($servername, $username, $password, $database);
 
@@ -11,19 +15,27 @@ session_start();
                 die("Falha na conexão com o banco de dados: " . mysqli_connect_error());
             }
 
+            mysqli_set_charset($conexao, "utf8");
+
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $especie = mysqli_real_escape_string($conexao, $_POST["especie"]);
                 $genero = mysqli_real_escape_string($conexao, $_POST["genero"]);
+                $nome = mysqli_real_escape_string($conexao, $_POST["nome"]);
                 $descricao = mysqli_real_escape_string($conexao, $_POST["descricao"]);
                 $cidade = mysqli_real_escape_string($conexao, $_POST["cidade"]);
                 $id = $_SESSION['usuario_id'];
 
                 if (isset($_FILES["imagem"]) && $_FILES["imagem"]["error"] == 0) {
-                    $nome_temporario = $_FILES["imagem"]["tmp_name"];
-                    $nome_arquivo = "sospet/img/" . $_FILES["imagem"]["name"];
+                    $diretorio_base = "sospet/img/";
 
-                    if (move_uploaded_file($nome_temporario, $nome_arquivo)) {
-                        echo "Imagem enviada com sucesso!";
+                    if (!is_dir($diretorio_base)) {
+                        mkdir($diretorio_base, 0755, true);
+                    }
+
+                    $imagem = $diretorio_base . $_FILES["imagem"]["name"];
+
+                    if (move_uploaded_file($_FILES["imagem"]["tmp_name"], $imagem)) {
+                
                     } else {
                         die("Erro no envio da imagem.");
                     }
@@ -31,11 +43,10 @@ session_start();
                     die("Nenhum arquivo de imagem enviado.");
                 }
             
-                $sql = "INSERT INTO pet (especie, genero, nome, descricao, cidade, imagem, usuario_id) VALUES ('$especie', '$genero', '$nome', '$descricao', '$cidade', '$nome_arquivo', '$id')";
+                $sql = "INSERT INTO pet (especie, genero, descricao, cidade, imagem, usuario_id) VALUES ('$especie', '$genero', '$descricao', '$cidade', '$imagem', '$id')";
             
                 if (mysqli_query($conexao, $sql)) {
                     $idDoUsuario = mysqli_insert_id($conexao);
-                    echo "Anúncio publicado com sucesso!";
             
                     header("Location: pagina-pet.php?id=$id");
                     exit();
@@ -45,6 +56,7 @@ session_start();
             }
             
             mysqli_close($conexao);
+ob_end_flush();
 ?>
 
 <!DOCTYPE html>
@@ -53,6 +65,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro-achei.css">
     <title>cadastro pet encontrado!</title>
@@ -64,7 +77,7 @@ session_start();
     <div class="container">
         <img class= "cadastro-img" src="img/cadastro-achei.jpg" alt="imagem cadastro achei pet">
         <div class="cadastro">
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
                 <div class="cadastro-header"> 
                     <div class="titulo">
                         <h1>você encontrou um pet? que ótimo!</h1>
