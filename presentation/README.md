@@ -1,9 +1,6 @@
 # Apresentação
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
-
-
-O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
+Link da apresentação em PPXT: https://docs.google.com/presentation/d/1jz6-BeNlLYnkIgwpUoEhovAgEij6OI9F/edit?usp=sharing&ouid=114640025212282028523&rtpof=true&sd=true
 
 ## Título do Projeto
 
