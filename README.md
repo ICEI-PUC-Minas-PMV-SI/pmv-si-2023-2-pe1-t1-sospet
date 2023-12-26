@@ -41,7 +41,7 @@ Hugo Bastos de Paula
 
 # Site
 
-<li><a href="https://livredata.com.br/sospet/"></a></li>
+<li><a href="https://livredata.com.br/sospet/" title="Acesse o Site do Projeto"></a></li>
 
 # Apresentação
 
