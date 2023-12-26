@@ -1,29 +1,38 @@
-cff-version: 1.0.1
+cff-version: 1.2.0
+title: SOS PET
 message: Please cite this software using these metadata.
-title:
+type: dataset
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
+  - given-names: Júlia
+    family-names: Persson Mascari
+    email: juliamascari24@gmail.com
+  - name: Pontificia Universidade Catolica de Minas Gerais
+    address: Belo Horizonte - Minas Gerais
+    website: 'https://www.pucminas.br/'
+ - name-suffix: Professor Hugo Bastos de Paula
     affiliation: PUC Minas
-    family-names:
-    given-names:
+identifiers:
+  - type: url
+    value: 'https://livredata.com.br/sospet/'
+    description: Site SOS PET
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe1-t1-sospet.git
+url: 'https://livredata.com.br/sospet/'
+abstract: >-
+  O SOS PET é um site que para busca e reencontro entre
+  animais perdidos com seus donos e o encontro entre
+  bichinhos que precisam de um novo lar, com pessoas em
+  busca de um pet para amar e cuidar.
 keywords:
-  -
-  -
-repository-code:
+  - cachorro desaparescido
+  - gato desaparescido
+  - cachorro perdido
+  - gato perdido
+  - encontrar gato
+  - encontrar cachorro
+  - adotar cachorro
+  - adotar gato
+  - pet perdido
+  - pet
 license: CC-BY-4.0
-version: 1.0.0
-date-released: 2023-06-30
+version: '0.1'
+date-released: '2023-12-15'
