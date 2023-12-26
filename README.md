@@ -39,10 +39,10 @@ Hugo Bastos de Paula
 
 <li><a href="src"> Código Fonte</a></li>
 
-# Site
-
-<li><a href="https://livredata.com.br/sospet/"> Site do Projeto</a></li>
-
 # Apresentação
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
+
+# Site
+
+<li><a href="https://livredata.com.br/sospet/"> Site do Projeto</a></li>
