@@ -1,21 +1,28 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
 cff-version: 1.2.0
 title: SOS PET
-message: Please cite this software using these metadata.
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
 type: dataset
 authors:
   - given-names: Júlia
     family-names: Persson Mascari
     email: juliamascari24@gmail.com
+  - name-particle: Professor
+    given-names: 'Hugo '
+    family-names: Bastos de Paula
   - name: Pontificia Universidade Catolica de Minas Gerais
     address: Belo Horizonte - Minas Gerais
     website: 'https://www.pucminas.br/'
- - name-suffix: Professor Hugo Bastos de Paula
-    affiliation: PUC Minas
 identifiers:
   - type: url
     value: 'https://livredata.com.br/sospet/'
     description: Site SOS PET
-repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe1-t1-sospet.git
+repository-code: >-
+  https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe1-t1-sospet.git
 url: 'https://livredata.com.br/sospet/'
 abstract: >-
   O SOS PET é um site que para busca e reencontro entre
