@@ -20,26 +20,3 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |----| Página institucional sobre o site | BAIXA | sobresos.php |
 |----| Página institucional sobre as políticas do site | BAIXA | politicasepriv.php |
 |----| Formulário de contato | BAIXA | formulario.php |
-
-### Página de Cadastro
-
-|ID    | Descrição do Requisito | Prioridade | Artefato Criado |
-|------|------------------------|------------|-----------------|
-| name | Armazenar o nome do usúario | ALTA | input-box |
-| email | Armazenar o email do usúario | ALTA | input-box |
-| cel | Armazenar o celular do usúario | MÉDIA | input-box |
-| password | Armazenar a senha do usúario | ALTA | input-box |
-| empresa | Armazenar a empresa do usúario | ALTA | input-box |
-|----| Validar dados e cadastrar usúario | ALTA | "cadastrarUsuario()" |
-|----| Direcionar para página de Login caso já seja cadastrado | ALTA | div "login" |
-|----|---------------------------------------------------------|------|-------------|
-
-
-### Página de Login
-
-|ID    | Descrição do Requisito | Prioridade | Artefato Criado |
-|------|------------------------|------------|-----------------|
-| email | Validar o email do usúario | ALTA | input-box |
-| password | Validar a senha do usúario | ALTA | input-box |
-|----| Validar se dados já estão cadastrados e fazer Login | ALTA | "validarLogin()" |
-|----| Direcionar para página de Cadastro caso usúario não seja cadastrado | ALTA | div "cadastro" |
