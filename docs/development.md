@@ -21,3 +21,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |----| Página institucional sobre as políticas do site | BAIXA | politicasepriv.php |
 |----| Formulário de contato | BAIXA | formulario.php |
 
+### Página de Cadastro
+
+|ID    | Descrição do Requisito | Prioridade | Artefato Criado |
+|------|------------------------|------------|-----------------|
+| name | Armazenar o nome do usúario | ALTA | input-box |
+| email | Armazenar o email do usúario | ALTA | input-box |
+| cel | Armazenar o celular do usúario | MÉDIA | input-box |
+| password | Armazenar a senha do usúario | ALTA | input-box |
+| empresa | Armazenar a empresa do usúario | ALTA | input-box |
+|----| Validar cadastro e cadastrar usúario | ALTA | div "cadastro" |
+|----| Direcionar para página de Login caso já seja cadastrado | ALTA | div "login" |
+|----|---------------------------------------------------------|------|-------------|
