@@ -30,5 +30,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | cel | Armazenar o celular do usúario | MÉDIA | input-box |
 | password | Armazenar a senha do usúario | ALTA | input-box |
 | empresa | Armazenar a empresa do usúario | ALTA | input-box |
-|----| Validar cadastro e cadastrar usúario | ALTA | div "cadastro" |
+|----| Validar dados e cadastrar usúario | ALTA | "cadastrarUsuario()" |
 |----| Direcionar para página de Login caso já seja cadastrado | ALTA | div "login" |
+|----|---------------------------------------------------------|------|-------------|
+
+
+### Página de Login
+
+|ID    | Descrição do Requisito | Prioridade | Artefato Criado |
+|------|------------------------|------------|-----------------|
+| email | Validar o email do usúario | ALTA | input-box |
+| password | Validar a senha do usúario | ALTA | input-box |
+|----| Validar se dados já estão cadastrados e fazer Login | ALTA | "validarLogin()" |
+|----| Direcionar para página de Cadastro caso usúario não seja cadastrado | ALTA | div "cadastro" |
