@@ -32,4 +32,3 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 | empresa | Armazenar a empresa do usúario | ALTA | input-box |
 |----| Validar cadastro e cadastrar usúario | ALTA | div "cadastro" |
 |----| Direcionar para página de Login caso já seja cadastrado | ALTA | div "login" |
-|----|---------------------------------------------------------|------|-------------|
